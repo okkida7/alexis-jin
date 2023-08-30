@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 4e3f7a0af9052cf418fa6452e135fda9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DotLinDot
+  fontNames:
+  - DotLinDot
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1d277155de26e094a8e3a61088c62ede, type: 3}
+  - {fileID: 12800000, guid: dd9b76c5c192a6f43a1fc05278de6944, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
