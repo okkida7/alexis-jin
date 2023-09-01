@@ -11,11 +11,13 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDirection;
     private bool isMoving = false;
     private Animator anim;
+    private Rigidbody2D rb;
 
     // Update is called once per frame
     void Start()
     {
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -50,13 +52,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
+        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
 
     private void Shake()
     {
            float yOffset = Mathf.Sin(Time.time * shakeSpeed) * shakeAmount;
-           transform.position = new Vector3(transform.position.x, transform.position.y + yOffset, transform.position.z);
+           rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + yOffset);
     }
 
     private void StopAnim()

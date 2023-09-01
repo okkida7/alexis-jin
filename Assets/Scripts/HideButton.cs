@@ -9,6 +9,7 @@ public class HideButton : MonoBehaviour
     public GameObject logo;
     public GameObject button2;
     public Animator logoAnim;
+    public Animator buttonAnim;
     public Animator button2Anim;
 
     public void Hide()
@@ -22,6 +23,7 @@ public class HideButton : MonoBehaviour
     public void LogoHide()
     {
         logoAnim.SetTrigger("Hide");
+        buttonAnim.SetTrigger("Pressed");
         button2Anim.SetTrigger("Pressed");
     }
 
